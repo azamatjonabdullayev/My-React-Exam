@@ -1,0 +1,9 @@
+.rhomb {
+  transform: skewX(-20deg);
+  font-family: "Manrope";
+}
+
+.rhomb span {
+  display: block;
+  transform: skewX(20deg);
+}
