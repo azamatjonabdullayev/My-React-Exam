@@ -12,6 +12,9 @@ import story from "../assets/g_categories_img06.png.svg";
 import gameFest from "../assets/game-fest.svg";
 import bigger from "../assets/bigger-section.svg";
 import advertisement from "../assets/advertisement04.jpg.svg";
+import videoComponent from "../assets/video-container.svg";
+import { HiOutlineUserCircle } from "react-icons/hi2";
+import { CiCalendar } from "react-icons/ci";
 
 const Main = () => {
   return (
@@ -75,7 +78,37 @@ const Main = () => {
         />
       </section>
 
-      <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] pb-[70px]"></section>
+      <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] pb-[70px] flex items-center justify-center">
+        <div className="maincontainer">
+          <div className="flex flex-col items-start gap-10">
+            <Rhombus catName="Trending Gaming News" />
+
+            <div className="flex flex-col gap-6">
+              <img src={videoComponent} alt="firstVideo" />
+
+              <span className="block w-fit px-2.5 py-1 font-semibold bg-[#545c67] rounded font-[Manrope]">
+                FIGHTER
+              </span>
+
+              <p className="font-[Manrope] font-bold w-[550px] text-3xl">
+                Exciting New Browned Chocolate Gaming Cookies Daily Breakfast
+              </p>
+
+              <ul className="flex items-center gap-4 font-[Inter]  font-semibold">
+                <li className="flex items-center gap-1 text-base">
+                  <HiOutlineUserCircle />
+                  BY ADMIN
+                </li>
+
+                <li className="flex items-center gap-1 text-base">
+                  <CiCalendar />
+                  27 AUGUST, 2025
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
