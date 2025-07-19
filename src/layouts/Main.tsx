@@ -9,6 +9,9 @@ import racing from "../assets/g_categories_img03.png.svg";
 import animation from "../assets/g_categories_img04.png.svg";
 import fighter from "../assets/g_categories_img05.png.svg";
 import story from "../assets/g_categories_img06.png.svg";
+import gameFest from "../assets/game-fest.svg";
+import bigger from "../assets/bigger-section.svg";
+import advertisement from "../assets/advertisement04.jpg.svg";
 
 const Main = () => {
   return (
@@ -52,6 +55,27 @@ const Main = () => {
           </ul>
         </div>
       </section>
+
+      <section className="flex items-center justify-center mt-10 game-fest">
+        <a href="#">
+          <img src={gameFest} alt="gamefest" />
+        </a>
+      </section>
+
+      <section
+        className="flex flex-col items-center justify-around mt-[70px]"
+        style={{ fontFamily: "Manrope" }}
+      >
+        <img className="pointer-events-none " src={bigger} alt="big" />
+
+        <img
+          className="cursor-pointer mt-[60px]"
+          src={advertisement}
+          alt="ad"
+        />
+      </section>
+
+      <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] pb-[70px]"></section>
     </>
   );
 };
