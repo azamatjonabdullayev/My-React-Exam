@@ -176,7 +176,7 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center mt-20 weekly-news">
+      <section className="flex items-center justify-center mt-20 pointer-events-none weekly-news">
         <img src={weeklyNews} alt="" />
       </section>
     </>
