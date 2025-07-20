@@ -13,6 +13,9 @@ import gameFest from "../assets/game-fest.svg";
 import bigger from "../assets/bigger-section.svg";
 import advertisement from "../assets/advertisement04.jpg.svg";
 import videoComponent from "../assets/video-container.svg";
+import animationVideoFrag from "../assets/animation-videofrag.svg";
+import counterVideoFrag from "../assets/counter-videofrag.svg";
+import nfsVideoFrag from "../assets/nfs-videofrag.svg";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiCalendar } from "react-icons/ci";
 
@@ -79,7 +82,7 @@ const Main = () => {
       </section>
 
       <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] pb-[70px] flex items-center justify-center">
-        <div className="maincontainer">
+        <div className="flex items-center justify-center gap-16 maincontainer">
           <div className="flex flex-col items-start gap-10">
             <Rhombus catName="Trending Gaming News" />
 
@@ -107,6 +110,68 @@ const Main = () => {
               </ul>
             </div>
           </div>
+
+          <ul className="flex flex-col items-center gap-8">
+            <li className="flex items-start justify-center gap-7">
+              <img src={animationVideoFrag} alt="" />
+
+              <div className="flex flex-col gap-4 ">
+                <span className="block w-fit px-2.5 py-1 font-[Manrope] font-semibold bg-[#606975] rounded">
+                  ANIMATION
+                </span>
+                <p className="font-[Manrope] font-bold text-xl w-[251px]">
+                  A Guide To Getting Data Visualization Right
+                </p>
+
+                <div className="flex items-center gap-3 justify-center font-[Inter]">
+                  <HiOutlineUserCircle />
+                  BY ADMIN
+                  <CiCalendar />
+                  27 AUGUST, 2025
+                </div>
+              </div>
+            </li>
+
+            <li className="flex items-start justify-center gap-7">
+              <img src={counterVideoFrag} alt="" />
+
+              <div className="flex flex-col gap-4 ">
+                <span className="block w-fit px-2.5 py-1 font-[Manrope] font-semibold bg-[#606975] rounded">
+                  ACTION
+                </span>
+                <p className="font-[Manrope] font-bold text-xl w-[251px]">
+                  A Guide To Getting Data Visualization Right
+                </p>
+
+                <div className="flex items-center gap-3 justify-center font-[Inter]">
+                  <HiOutlineUserCircle />
+                  BY ADMIN
+                  <CiCalendar />
+                  27 AUGUST, 2025
+                </div>
+              </div>
+            </li>
+
+            <li className="flex items-start justify-center gap-7">
+              <img src={nfsVideoFrag} alt="" />
+
+              <div className="flex flex-col gap-4 ">
+                <span className="block w-fit px-2.5 py-1 font-[Manrope] font-semibold bg-[#606975] rounded">
+                  RACING
+                </span>
+                <p className="font-[Manrope] font-bold text-xl w-[251px]">
+                  A Guide To Getting Data Visualization Right
+                </p>
+
+                <div className="flex items-center gap-3 justify-center font-[Inter]">
+                  <HiOutlineUserCircle />
+                  BY ADMIN
+                  <CiCalendar />
+                  27 AUGUST, 2025
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </>
