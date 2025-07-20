@@ -15,6 +15,7 @@ import advertisement from "../assets/advertisement04.jpg.svg";
 import videoComponent from "../assets/video-container.svg";
 import animationVideoFrag from "../assets/animation-videofrag.svg";
 import counterVideoFrag from "../assets/counter-videofrag.svg";
+import weeklyNews from "../assets/weekly-news.svg";
 import nfsVideoFrag from "../assets/nfs-videofrag.svg";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiCalendar } from "react-icons/ci";
@@ -81,7 +82,7 @@ const Main = () => {
         />
       </section>
 
-      <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] pb-[70px] flex items-center justify-center">
+      <section className="trendingGamesNews bg-[#0b1829] px-[300px] pt-[100px] mt-[70px] pb-[70px] flex items-center justify-center">
         <div className="flex items-center justify-center gap-16 maincontainer">
           <div className="flex flex-col items-start gap-10">
             <Rhombus catName="Trending Gaming News" />
@@ -173,6 +174,10 @@ const Main = () => {
             </li>
           </ul>
         </div>
+      </section>
+
+      <section className="flex items-center justify-center mt-20 weekly-news">
+        <img src={weeklyNews} alt="" />
       </section>
     </>
   );
